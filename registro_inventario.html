@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="left">
+            <div class="menu-container">
+                
+                <div class="menu" id="menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="sidebar" id="sidebar">
+        <nav>
+            <ul>
+                <li>
+                    <a href="registro_usuario.html" >
+                        <span>Usuarios</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="registro_inventario.html" class="selected">
+                        <span>Inventario</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mensajes.html">
+                        <span>Mensajes</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <main id="main">
+    <div class="formulario">
+        <form action="" class="form" onsubmit="return validarinventario();" id="formulario" method="post">
+
+            <label for="codigo">Codigo</label>
+            <input type="number" name="codigo" id="codigo" required>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" required>
+
+            <label for="descripcion">Descripcion:</label>
+            <input type="text" name="descripcion" id="descripcion" required>
+            
+            <label for="marca">Marca:</label>
+            <input type="text" name="marca" id="marca" required>
+
+            <label for="precio">Precio:</label>
+            <input type="number" name="precio" id="precio" required>
+
+            <label for="cantidad">Cantidad</label>
+            <input type="number" name="cantidad" id="cantidad" required>
+<br><br>
+            <input type="submit" value="Agregar">
+        </form>
+    </div>
+    </main>
+    <script src="validacion.js"></script>
+</body>
+</html>

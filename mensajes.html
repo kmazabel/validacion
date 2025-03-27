@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensajes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="left">
+            <div class="menu-container">
+                
+                <div class="menu" id="menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="sidebar" id="sidebar">
+        <nav>
+            <ul>
+                <li>
+                    <a href="registro_usuario.html">
+                        <span>Usuarios</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="registro_inventario.html">
+                        <span>Inventario</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mensajes.html" class="selected">
+                        <span>Mensajes</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <main id="main">
+    <div class="formulario">
+        <form action="" onsubmit="return validarmensajes();" id="formulario" method="post">
+            <label for="asunto">Asunto:</label>
+            <input type="text" name="asunto" id="asunto" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <input type="text" name="mensaje" id="mensaje">
+<br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+        <script src="validacion.js"></script>
+    </main>
+</body>
+</html>
